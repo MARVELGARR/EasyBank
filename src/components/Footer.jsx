@@ -13,7 +13,7 @@ function Footer() {
             <div className="lg:gap-5 flex gap-3">
               {socials.map(item=>{
                 return(
-                  <img className="" src={item.url} alt={item.name} key={item.name}/>
+                  <img className=" hover:bg-green-700" src={item.url} alt={item.name} key={item.name}/>
                 )
               })}
             </div> 
