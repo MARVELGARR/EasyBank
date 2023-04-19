@@ -33,7 +33,7 @@ function Header() {
                             return (
                                 <div>
 
-                                    <li onClick={()=>handleClickedLink(item.id)} className={`lg:hover:font-bold lg:text-xl lg:hover:text-black hover:text-green-400 lg:w-auto `} key={item.id}><a href={item.url}>{item.text}</a></li>
+                                    <li onClick={()=>handleClickedLink(item.id)} className={` ${isClicked == item.id ? "lg:font-bold" : ""} lg:hover:font-bold lg:text-xl lg:hover:text-black hover:text-green-400 lg:w-auto `} key={item.id}><a href={item.url}>{item.text}</a></li>
                                     <div className={`${isClicked == item.id ? "" : "hidden"} lg:w-12 mt-4 lg:h-1  lg:absolute bg-green-500`}></div>
                                 </div>
                             )
