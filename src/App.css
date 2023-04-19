@@ -1,0 +1,13 @@
+img{
+    object-fit: cover;
+}
+
+@media(min-width:1024px) {
+    .section1{
+        height:35rem;
+    }
+    .web{
+        max-height: 50rem;
+
+    }
+}
